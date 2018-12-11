@@ -1,10 +1,12 @@
 
 
+
+
 <% @active_customers.each do |active_customer| %>
 Title: <%= active_customer.asset.title %>
 Description <%= active_customer.asset.description %>
 
-<%= link_to "View Message", view_message_path(active_customer.asset.id,active_customer.cust_id) %>
+<%= link_to "View Message", view_message_path(active_customer.asset.id,active_customer.cust_id) %><br/>
 
 <!-- link_to "Profile", profile_path(@profile) -->
 
