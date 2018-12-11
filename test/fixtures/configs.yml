@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cust_id: 1
+  loan_nbr: MyString
+  asset_id: MyString
+  actv_sts: 
+
+two:
+  cust_id: 1
+  loan_nbr: MyString
+  asset_id: MyString
+  actv_sts: 

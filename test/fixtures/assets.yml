@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  asset_id: 1
+  eff_id: 2018-12-07 22:36:12
+  html_string: MyText
+  ver_nbr: 1
+  title: MyText
+  description: MyText
+
+two:
+  asset_id: 1
+  eff_id: 2018-12-07 22:36:12
+  html_string: MyText
+  ver_nbr: 1
+  title: MyText
+  description: MyText

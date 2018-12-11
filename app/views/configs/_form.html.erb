@@ -1,0 +1,38 @@
+<%= form_with(model: config, local: true) do |form| %>
+  <% if config.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(config.errors.count, "error") %> prohibited this config from being saved:</h2>
+
+      <ul>
+      <% config.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :cust_id %>
+    <%= form.number_field :cust_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :loan_nbr %>
+    <%= form.text_field :loan_nbr %>
+  </div>
+
+  <div class="field">
+    <%= form.label :asset_id %>
+    <%#= form.text_field :asset_id %>
+    <%= collection_select(:config, :asset_id, @assets, :id, :ver_nbr) %>
+  </div>
+
+  <div class="field">
+    <%= form.label :actv_sts %>
+    <%= form.text_field :actv_sts %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
