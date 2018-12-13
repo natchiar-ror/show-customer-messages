@@ -18,8 +18,7 @@
 	<tr>
 <td> <%= active_customer.asset.title %></td>
 <td><%= active_customer.asset.description %></td>
-<td><%= active_customer.asset.id %></td>
-<td><%= active_customer.cust_id%></td>
+
 <td><%= link_to "View Message", view_message_path(active_customer.asset.id,active_customer.cust_id) %></td>
 
 	</tr>
