@@ -1,7 +1,8 @@
 
-Detailed message:
+<div class="well">
 
 
-<%= display_str(@audit_log.id) %>
+<%= display_str(@audit_log.id) %><br/>
 
-<td><%= link_to 'Destroy', delete_message_path(@audit_log.id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+</div>
+<%= button_to 'Destroy', delete_message_path(@audit_log.id), method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-primary" %>

@@ -1,7 +1,8 @@
 class HomeController < ApplicationController
   def index
 	  #~ @assets = Asset.all
-	  @active_customers = Config.where(actv_sts: "T")
+	  #@active_customers = Config.where(actv_sts: "T")
+	  @audit_logs = AudLog.where(del_flg: 'F')
   end
   def view_message
 	@audit_log = AudLog.where(asset_id: params[:asset_id],cust_id: params[:customer_id]).first
